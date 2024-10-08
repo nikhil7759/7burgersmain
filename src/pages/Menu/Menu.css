@@ -1,0 +1,236 @@
+/* CUSTOM SCROLL BAR */
+*,
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+:root {
+  scrollbar-color: rgb(210, 210, 210) rgb(46, 54, 69);
+  scrollbar-width: thin;
+  --white: #fff;
+  --black: #000;
+  --darkgreen: #24572c;
+  --darkyellow: #eb922a;
+  --darkred: #9e1414;
+  --litegreen: #62c08b;
+  --dark: #242426;
+  --gray: #5e6f77;
+}
+
+::-webkit-scrollbar {
+  height: 12px;
+  width: 8px;
+  background: var(--dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: gray;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+}
+
+/* DEFAULT STYLES */
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #f7f7f7;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  line-height: 1.8em;
+  letter-spacing: 0.08em;
+  color: var(--gray);
+}
+
+.btn1,
+.btn2 {
+  display: inline-block;
+  text-align: center;
+  padding: 15px 30px;
+}
+
+.btn1 {
+  background-color: transparent;
+  border: 2px solid var(--white);
+  border-radius: 40px;
+  color: var(--white);
+}
+
+.btn1:hover {
+  background-color: var(--white);
+  color: var(--darkgreen);
+}
+
+.btn2 {
+  background-color: var(--litegreen);
+  color: var(--white);
+}
+
+.btn2:hover {
+  background-color: var(--darkgreen);
+}
+
+/* STYLES FOR SHOP PAGE */
+.default-hero-banner {
+  width: 100%;
+  background-image: url("https://i.ibb.co/DgRMWdv/default-bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 5rem;
+  text-align: center;
+  color: var(--white);
+  font-size: 1.6em;
+}
+
+/* LIST SECTION */
+.list-section {
+  display: flex;
+  padding: 4rem 0;
+}
+
+.list-section .left-section {
+  width: 30%;
+  padding: 2rem 1rem;
+}
+
+.list-section .left-section .column-1,
+.list-section .left-section .column-2 {
+  background-color: var(--darkyellow);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 1rem;
+}
+
+.list-section .left-section .column-1 a,
+.list-section .left-section .column-2 a {
+  color: var(--black);
+}
+
+.list-section .right-section {
+  width: 100%;
+  padding: 2rem 1rem;
+}
+
+.list-cards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.list-cards .list-card {
+  width: 45%;
+  margin: 10px;
+  border: 1px solid rgba(1, 1, 1, 0.1);
+  border-radius: 5px;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+}
+
+.list-cards .list-card section {
+  padding: 0.5rem 1rem;
+}
+
+.list-cards .list-card section img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.list-cards .list-card section p {
+  line-height: 1.4em;
+  font-size: 13px;
+}
+
+.list-cards .list-card .price {
+  font-size: 1.3em;
+}
+
+.list-category {
+  background-color: rgba(1, 1, 1, 0.7);
+  position: absolute;
+  left: -100%;
+  top: 0;
+  padding: 1rem 2rem;
+  transition: 0.5s;
+  width: 100%;
+}
+
+.list-category p {
+  color: var(--white);
+}
+
+.list-cards .list-card:hover .list-category {
+  left: 0;
+}
+
+/* FOOTER */
+.footer {
+  background-color: var(--dark);
+  padding: 5rem 0;
+}
+
+.footer section {
+  padding: 1rem 2rem;
+  width: 100%;
+}
+
+.footer section h3 {
+  color: var(--white);
+}
+
+.footer section a {
+  color: var(--gray);
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.footer section a:hover {
+  color: var(--white);
+}
+
+.sub-footer {
+  background-color: var(--black);
+  text-align: center;
+  color: var(--gray);
+  padding: 1rem 0;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 920px) {
+  .list-section {
+    flex-direction: column;
+  }
+
+  .list-section .left-section {
+    width: 100%;
+  }
+
+  .list-cards .list-card {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .list-cards .list-card {
+    width: 100%;
+    margin: 10px 0;
+  }
+}

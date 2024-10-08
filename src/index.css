@@ -1,0 +1,197 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@font-face {
+  font-family: "Migra";
+  src: url("./fonts/Migra/Migra-Extrabold.woff2") format("woff2"),
+    url("./fonts/Migra/Migra-Extrabold.woff") format("woff"),
+    url("./fonts/Migra/Migra-Extralight.woff") format("woff");
+  /* Add other font properties as needed */
+}
+
+/* 
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&family=Ojuju:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+  
+  @import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Inter:wght@100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&family=Ojuju:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap'); */
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+.hand {
+  font-family: "Delicious Handrawn", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.glass-bar {
+  animation-delay: 1s;
+}
+.seven-sauce-shadow {
+  box-shadow: 12px 12px 0px 0px #000000;
+}
+
+.our-story-shadow {
+  box-shadow: 20px 17px 13.1px 0px #00000040;
+}
+.blog-shadow {
+  box-shadow: 7px 1px 4px 0px #00000040;
+}
+
+.shadow-navBar {
+  box-shadow: 0px 1px 9.9px 0px rgba(0, 0, 0, 0.29);
+}
+
+.shadow-order-button {
+  box-shadow: 2px 3px 0px 0px #000000;
+}
+.shadow-input {
+  box-shadow: 0px 3px 0px 0px #000000;
+}
+
+.span-two-columns {
+  grid-column: span 2; /* Spans 2 columns */
+}
+
+.card {
+  top: 0;
+  padding-top: calc(var(--index) * var(--cardTopPadding));
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0; /* Adjust this value as needed */
+  z-index: 10;
+}
+
+.backdrop {
+  /* Standard syntax */
+  backdrop-filter: blur(8px);
+  /* Vendor prefixed */
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+}
+
+.btn-shine {
+  color: #fff;
+  background: linear-gradient(to right, #233780 0, #fff 40%, #233780 60%);
+  background-position: 0;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  -webkit-text-size-adjust: none;
+  font-weight: 800;
+  font-size: 55px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0px;
+  }
+  20% {
+    background-position: 50px;
+  }
+  40% {
+    background-position: 100px;
+  }
+  60% {
+    background-position: 150px;
+  }
+  80% {
+    background-position: 200px;
+  }
+  100% {
+    background-position: 250px;
+  }
+}
