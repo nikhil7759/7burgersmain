@@ -45,7 +45,7 @@ const Card = () => {
           </button>
         </div>
 
-        <button className="w-[286px] bg-font-blue text-[#FED676] inter text-[15px] leading-[18.15px]  md:py-[16px] px-[10px] md:px-[28px] lg:py-[16px] lg:px-[28px] rounded-[34px]  flex justify-center items-center gap-1 hover:shadow-none transition-all ease-out duration-300 shadow-order-button">
+        <button className="w-[286px] bg-font-blue text-[#152663] inter text-[15px] leading-[18.15px]  md:py-[16px] px-[10px] md:px-[28px] lg:py-[16px] lg:px-[28px] rounded-[34px]  flex justify-center items-center gap-1 hover:shadow-none transition-all ease-out duration-300 shadow-order-button">
           <img src="/plus.svg" alt="plus" />
           <div>Add to cart</div>
         </button>

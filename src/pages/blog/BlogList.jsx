@@ -53,8 +53,8 @@ const BlogList = () => {
     <div>
       <Navbar />
       <Link to={`/blogs/${latestBlog?.id}`} className="relative">
-        <div className="relative  md:pt-[200px] lg:pt-24 bg-[#FED676] h-[700px] lg:h-[1000px] md:h-[800px] p-8 flex flex-col justify-start items-center">
-          <div className="mt-[150px] md:pt-2 pt-0 lg:pt-0 font-migra w-[105px] h-[49px] text-[32px] font-[800] lg:w-[355px] lg:h-[163px] md:w-[192px] md:h-[88px] text-center lg:text-[96px] text-[#FED676] bg-[#1F4386] rounded-[92px] md:text-[48px]">
+        <div className="relative  md:pt-[200px] lg:pt-24 bg-[#152663] h-[700px] lg:h-[1000px] md:h-[800px] p-8 flex flex-col justify-start items-center">
+          <div className="mt-[150px] md:pt-2 pt-0 lg:pt-0 font-migra w-[105px] h-[49px] text-[32px] font-[800] lg:w-[355px] lg:h-[163px] md:w-[192px] md:h-[88px] text-center lg:text-[96px] text-[#152663] bg-[#1F4386] rounded-[92px] md:text-[48px]">
             Blog
           </div>
           <div className="flex lg:flex-row md:flex-row flex-col mt-[50px]">
@@ -98,8 +98,11 @@ const BlogList = () => {
           ))}
         </div>
         <div className="flex justify-center items-center m-auto pb-12 mt-10">
-        <PaginationButton currentPage={currentPage}  totalPages={totalPages} handlePageChange={handlePageChange} />
-          
+          <PaginationButton
+            currentPage={currentPage}
+            totalPages={totalPages}
+            handlePageChange={handlePageChange}
+          />
         </div>
       </div>
       <Footer />

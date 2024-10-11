@@ -7,9 +7,9 @@ import Commitment from "./Commitment";
 const Bestseller = () => {
   return (
     <div className="py-[40px]  bg-[#F4EBDC]">
-      <div className="relative">
-        <a className="btn-shine pl-[40px] text-font-blue text-[55px] leading-[66.55px] font-migra">
-          Bestseller
+      <div className="relative text-center">
+        <a className="btn-shine pl-[40px] text-font-blue text-[55px] leading-[66.55px] font-migra bestsell">
+          Our Bestseller
         </a>
       </div>
 

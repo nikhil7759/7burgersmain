@@ -6,27 +6,27 @@ const Marquee = () => {
       <div class="overflow-x-hidden  ">
         <div class="animate-marquee whitespace-nowrap font-migra text-white  text-[36px] leading-[43.56px] ">
           <span class="mx-4 text-4xl">INNOVATIVE RECIPES</span>
-          <span class="mx-4 text-4xl">FINEST INGRIDIENTS</span>
+          <span class="mx-4 text-4xl">FINEST INGREDIENTS</span>
           <span class="mx-4 text-4xl">INNOVATIVE RECIPES</span>
-          <span class="mx-4 text-4xl">FINEST INGRIDIENTS</span>
+          <span class="mx-4 text-4xl">FINEST INGREDIENTS</span>
           <span class="mx-4 text-4xl">INNOVATIVE RECIPES</span>
-          <span class="mx-4 text-4xl">FINEST INGRIDIENTS</span>
+          <span class="mx-4 text-4xl">FINEST INGREDIENTS</span>
           <span class="mx-4 text-4xl">INNOVATIVE RECIPES</span>
-          <span class="mx-4 text-4xl">FINEST INGRIDIENTS</span>
+          <span class="mx-4 text-4xl">FINEST INGREDIENTS</span>
           <span class="mx-4 text-4xl">INNOVATIVE RECIPES</span>
-          <span class="mx-4 text-4xl">FINEST INGRIDIENTS</span>
+          <span class="mx-4 text-4xl">FINEST INGREDIENTS</span>
           <span class="mx-4 text-4xl">INNOVATIVE RECIPES</span>
-          <span class="mx-4 text-4xl">FINEST INGRIDIENTS</span>
+          <span class="mx-4 text-4xl">FINEST INGREDIENTS</span>
           <span class="mx-4 text-4xl">INNOVATIVE RECIPES</span>
-          <span class="mx-4 text-4xl">FINEST INGRIDIENTS</span>
+          <span class="mx-4 text-4xl">FINEST INGREDIENTS</span>
           <span class="mx-4 text-4xl">INNOVATIVE RECIPES</span>
-          <span class="mx-4 text-4xl">FINEST INGRIDIENTS</span>
+          <span class="mx-4 text-4xl">FINEST INGREDIENTS</span>
           <span class="mx-4 text-4xl">INNOVATIVE RECIPES</span>
-          <span class="mx-4 text-4xl">FINEST INGRIDIENTS</span>
+          <span class="mx-4 text-4xl">FINEST INGREDIENTS</span>
           <span class="mx-4 text-4xl">INNOVATIVE RECIPES</span>
-          <span class="mx-4 text-4xl">FINEST INGRIDIENTS</span>
+          <span class="mx-4 text-4xl">FINEST INGREDIENTS</span>
           <span class="mx-4 text-4xl">INNOVATIVE RECIPES</span>
-          <span class="mx-4 text-4xl">FINEST INGRIDIENTS</span>
+          <span class="mx-4 text-4xl">FINEST INGREDIENTS</span>
         </div>
       </div>
     </div>

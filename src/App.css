@@ -1,0 +1,36 @@
+.basker {
+  font-family: "Baskervville", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 21px;
+  text-transform: capitalize;
+}
+p.basker.hello {
+  color: #fff;
+}
+.basker.des {
+  font-size: 15px;
+}
+.basker_main {
+  font-family: Migra;
+  font-size: 20px;
+  padding-top: 10px;
+}
+.inter {
+  font-family: "Baskervville" !important;
+  font-style: italic !important;
+}
+.test {
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .basker_main {
+    font-size: 15px;
+  }
+  .basker.des {
+    font-size: 13px;
+  }
+  .bestsell {
+    margin-left: 0;
+  }
+}

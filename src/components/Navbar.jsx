@@ -121,12 +121,12 @@ const Navbar = () => {
                   Menu
                 </Link>
               </motion.div>
-              <motion.div variants={linkVariants}>
+              {/* <motion.div variants={linkVariants}>
                 <Link className="flex gap-3" to="/blogs">
                   <img src="/navbar/blog.svg" />
                   Blog
                 </Link>
-              </motion.div>
+              </motion.div> */}
               <motion.div variants={linkVariants}>
                 <Link className="flex gap-3" to="/faq">
                   <img src="/navbar/faq.svg" />
@@ -164,7 +164,7 @@ const Navbar = () => {
                 }`
           }`,
           // transform: `${!scrolling ? "none" : "translateX(-50%)"}`,
-          backgroundColor: `${!scrolling ? "#FED676" : "white"}`,
+          backgroundColor: `${!scrolling ? "#faad1b" : "white"}`,
           borderRadius: `${!scrolling ? "none" : "50px"}`,
           width: `${
             !scrolling ? "100%" : `${windowWidth > 768 ? "80%" : "90%"}`
@@ -175,8 +175,8 @@ const Navbar = () => {
         transition={{ duration: 0.5, ease: "easeIn" }}
         className={`${
           !scrolling
-            ? "hidden fixed md:flex lg:flex justify-between items-center py-[12px] px-[100px] font-migra text-font-blue text-[16px] leading-[19.36px] font-[800] shadow-navBar "
-            : " transition-all ease-in-out duration-700 h-[62px] rounded-[40px] bg-white hidden fixed md:flex lg:flex justify-center items-center border-[1px] border-black m-auto "
+            ? "hidden fixed md:flex lg:flex justify-between items-center py-[12px] px-[100px] font-migra text-font-blue text-[16px] leading-[19.36px] font-[800] shadow-navBar"
+            : "transition-all ease-in-out duration-700 h-[62px] rounded-[40px] bg-[#faad1b] hidden fixed md:flex lg:flex justify-center items-center border-[1px] border-black m-auto"
         }`}
       >
         <motion.div
@@ -215,7 +215,8 @@ const Navbar = () => {
           >
             <Link to="/">Home</Link>
             <Link to="/menu">Menu</Link>
-            <Link to="/blogs">Blog</Link>
+            {/* <Link to="/blogs">Blog</Link> */}
+            <Link to="/faq">Faqs</Link>
           </motion.div>
           <motion.div
             animate={{
@@ -224,7 +225,6 @@ const Navbar = () => {
             transition={{ duration: 0.7, ease: "easeInOut" }}
             className="flex gap-[32px] md:text-[13px] lg:text-[16px] font-migra leading-[19.36px] text-[#233780]"
           >
-            <Link to="/faq">Faqs</Link>
             <Link to="/story">Our Story</Link>
             <Link to="/contact">Contact us</Link>
           </motion.div>

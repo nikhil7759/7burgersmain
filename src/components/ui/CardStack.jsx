@@ -45,9 +45,7 @@ const CardStack = ({ items, offset, scaleFactor }) => {
               {card.content}
             </div>
             <div>
-              <p className="text-neutral-500 font-medium dark:text-white">
-                {card.name}
-              </p>
+              <p className="basker_main">{card.name}</p>
               <p className="text-neutral-400 font-normal dark:text-neutral-200">
                 {card.designation}
               </p>

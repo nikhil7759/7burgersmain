@@ -10,9 +10,7 @@ import Testimonials from "../components/Testimonials";
 import GrillGang from "../components/GrillGang";
 import Whatsapp from "../components/Whatsapp";
 
-
 const HomePage = () => {
-
   const [show, setShow] = useState(true);
 
   useEffect(() => {
@@ -28,11 +26,10 @@ const HomePage = () => {
     };
   }, []);
 
-
   return (
     <div className="">
-    <Whatsapp/>
-    {/* {show && <Intro />} */}
+      {/* <Whatsapp/> */}
+      {/* {show && <Intro />} */}
 
       <Hero />
       <ul id="cards" className="list-none grid grid-cols-1">
@@ -46,14 +43,12 @@ const HomePage = () => {
             <SevenSecrets />
             <SevenSecretSauce />
             <div className="bg-[#233780] rounded-b-[60px]">
-
-            <Savor />
-            <GrillGang/>
+              <Savor />
+              <GrillGang />
             </div>
             <div className="bg-[#F4EBDC]">
-
-            <Testimonials/>
-            <Footer />
+              <Testimonials />
+              <Footer />
             </div>
           </div>
         </li>

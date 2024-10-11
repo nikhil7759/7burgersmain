@@ -1,7 +1,12 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import Navbar from "../components/Navbar";
-import { FaInstagram, FaFacebookF, FaYoutube, FaEnvelope } from "react-icons/fa";
+import {
+  FaInstagram,
+  FaFacebookF,
+  FaYoutube,
+  FaEnvelope,
+} from "react-icons/fa";
 import { FaPhoneVolume, FaLocationDot } from "react-icons/fa6";
 import { TiTick } from "react-icons/ti";
 import Footer from "../components/Footer";
@@ -51,7 +56,7 @@ const Contact = () => {
 
   return (
     <div className="bg-[#F4EBDC] min-h-[100vh] md:p-12 lg:p-12 px-6 pt-12 pb-12">
-    <Whatsapp/>
+      <Whatsapp />
       <Navbar />
       <div className="pt-[89.98px] h-[100%]">
         <div className="w-full flex justify-center items-center flex-col">
@@ -66,7 +71,7 @@ const Contact = () => {
           <div className="w-[99%] relative flex flex-col md:flex-row lg:flex-row gap-10 bg-white h-[100%] md:h-[667px] lg:h-[667px] md:p-2 lg:p-2 p-2 pt-2 pb-12 rounded-md mt-10">
             <div className="relative text-center md:text-left lg:text-left flex flex-col justify-between w-[99%] lg:w-[40%] md:w-[40%] md:h-[647px] gap-12 md:gap-0 lg:gap-0 lg:h-[647px] overflow-hidden bg-[#233780] rounded-md p-6">
               <div className=" hidden md:block lg:block absolute md:w-[100px] md:h-[100px] md:bottom-[5%] md:right-[10%] lg:bottom-[10%] lg:right-[20%] lg:w-[138px] lg:h-[138px] rounded-full z-20 bg-[#F4EBDC]"></div>
-              <div className=" md:w-[200px] md:h-[200px] md:bottom-[-15%] md:right-[-30%]  hidden md:block lg:block absolute lg:bottom-[-15%] lg:right-[-10%] lg:w-[269px] lg:h-[269px] rounded-full z-10 bg-[#FED676]"></div>
+              <div className=" md:w-[200px] md:h-[200px] md:bottom-[-15%] md:right-[-30%]  hidden md:block lg:block absolute lg:bottom-[-15%] lg:right-[-10%] lg:w-[269px] lg:h-[269px] rounded-full z-10 bg-[#152663]"></div>
               <div className="flex flex-col gap-2">
                 <div className="inter pt-10 text-[28px] font-[600] leading-[42px] text-white">
                   Contact Information
@@ -79,20 +84,20 @@ const Contact = () => {
                 <div className="flex flex-col md:flex-row lg:flex-row gap-2 justify-start items-center">
                   <FaPhoneVolume className="w-[17px] h-[17px]" />
                   <div className="inter font-[400] text-[15px] leading-[18px]">
-                    +1012 3456 789
+                    8800994086
                   </div>
                 </div>
                 <div className="flex gap-2 flex-col md:flex-row lg:flex-row justify-start items-center">
                   <FaEnvelope className="w-[17px] h-[17px]" />
                   <a className="inter font-[400] text-[15px] leading-[18px]">
-                    demo@gmail.com
+                    sevenburgersrh@sevenseaskitchens.com
                   </a>
                 </div>
                 <div className="flex gap-2 flex-col md:flex-row lg:flex-row justify-normal items-center">
                   <FaLocationDot className="w-[17px] h-[17px]" />
                   <div className="inter font-[400] text-[15px] leading-[18px]">
-                    132 Dartmouth Street Boston, Massachusetts 02156 United
-                    States
+                    Inside seven seas hotel 12, M2k rd , Manglam place
+                    Rohini,New delhi, Delhi 110085
                   </div>
                 </div>
               </div>
@@ -174,7 +179,9 @@ const Contact = () => {
                     />
                   </label>
                   <div className="col-span-1 md:col-span-2 lg:col-span-2">
-                    <h3 className="mb-4 text-lg font-semibold">Select Subject?</h3>
+                    <h3 className="mb-4 text-lg font-semibold">
+                      Select Subject?
+                    </h3>
                     <div className="grid lg:grid-cols-4 grid-cols-2 md:grid-cols-2 gap-6">
                       {inquiries.map((inquiry) => (
                         <div
@@ -231,8 +238,7 @@ const Contact = () => {
         </div>
       </div>
       <div className="mt-10">
-
-      <Footer/>
+        <Footer />
       </div>
     </div>
   );

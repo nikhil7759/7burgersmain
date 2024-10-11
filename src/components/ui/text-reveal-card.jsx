@@ -3,12 +3,7 @@ import { motion } from "framer-motion";
 import { twMerge } from "tailwind-merge";
 import { cn } from "../../utils/cn.js";
 
-export const TextRevealCard = ({
-  text,
-  revealText,
-  children,
-  className,
-}) => {
+export const TextRevealCard = ({ text, revealText, children, className }) => {
   const [widthPercentage, setWidthPercentage] = useState(0);
   const cardRef = useRef(null);
   const [left, setLeft] = useState(0);
@@ -34,16 +29,16 @@ export const TextRevealCard = ({
     }
   }
 
-function touchMoveHandler(event) {
+  function touchMoveHandler(event) {
     event.preventDefault();
     const clientX = event.touches[0].clientX;
     if (cardRef.current) {
-        const relativeX = clientX - left;
-        setWidthPercentage((relativeX / localWidth) * 100);
+      const relativeX = clientX - left;
+      setWidthPercentage((relativeX / localWidth) * 100);
     }
-}
+  }
 
-function mouseEnterHandler() {
+  function mouseEnterHandler() {
     setIsMouseOver(true);
   }
   function mouseLeaveHandler() {
@@ -86,11 +81,8 @@ function mouseEnterHandler() {
           transition={isMouseOver ? { duration: 0 } : { duration: 0.4 }}
           className="absolute bg-bg-yellow z-20  will-change-transform"
         >
-          <p
-            
-            className=" text-[50px] leading-[50px] md:text-[105px] md:leading-[105px] lg:text-[100px] lg:leading-[105px] md:py-10  lg:py-10 font-bold p-2  bg-clip-text text-[#152663] font-migra"
-          >
-            Burger’s 
+          <p className=" text-[50px] leading-[50px] md:text-[105px] md:leading-[105px] lg:text-[100px] lg:leading-[105px] md:py-10  lg:py-10 font-bold p-2  bg-clip-text text-[#273a7f] font-migra">
+            Burger’s
             <br />
             for rich
           </p>
@@ -106,20 +98,16 @@ function mouseEnterHandler() {
         ></motion.div>
 
         <div className=" overflow-hidden  w-full   ">
-          <p className=" text-[50px] leading-[50px] md:text-[70px] md:leading-[70px] lg:text-[100px] lg:leading-[100px] p-2 font-migra font-bold text-[#152663] ">
+          <p className=" text-[50px] leading-[50px] md:text-[70px] md:leading-[70px] lg:text-[100px] lg:leading-[100px] p-2 font-migra font-bold text-[#273a7f] ">
             {text}
           </p>
-          
         </div>
       </div>
     </div>
   );
 };
 
-export const TextRevealCardTitle = ({
-  children,
-  className,
-}) => {
+export const TextRevealCardTitle = ({ children, className }) => {
   return (
     <h2 className={twMerge("text-white text-lg mb-2", className)}>
       {children}
@@ -127,14 +115,8 @@ export const TextRevealCardTitle = ({
   );
 };
 
-export const TextRevealCardDescription = ({
-  children,
-  className,
-}) => {
+export const TextRevealCardDescription = ({ children, className }) => {
   return (
     <p className={twMerge("text-[#a9a9a9] text-sm", className)}>{children}</p>
   );
 };
-
-
-
